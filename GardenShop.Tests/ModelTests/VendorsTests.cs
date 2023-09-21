@@ -6,5 +6,13 @@ using System;
 namespace GardenShop.TestTools
 {
   [TestClass]
-  public class Vendors
+  public class VendorsTests 
+  {
+    [TestMethod]
+    public void VategoryConstructor_CreatesInstanceOfVendor_Vendor()
+    {
+      VendorsTests newVendor = new Vendor("test vendor");
+      Assert.AreEqual(typeof(Vendor), newVendor.GetType());
+    }
+  }
 }
