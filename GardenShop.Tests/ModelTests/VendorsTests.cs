@@ -3,15 +3,15 @@ using GardenShop.Models;
 using System.Collections.Generic;
 using System;
 
-namespace GardenShop.TestTools
+namespace GardenShop.Tests
 {
   [TestClass]
-  public class VendorsTests 
+  public class VendorTests 
   {
     [TestMethod]
     public void VategoryConstructor_CreatesInstanceOfVendor_Vendor()
     {
-      VendorsTests newVendor = new Vendor("test vendor");
+      Vendor newVendor = new Vendor("test vendor");
       Assert.AreEqual(typeof(Vendor), newVendor.GetType());
     }
   }
